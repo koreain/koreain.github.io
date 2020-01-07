@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "Categories"
     url: /categories/
+  - title: "Tags"
+    url: /tags/  
   - title: "ML"
     url: /categories/ML
   #- title: "ML"
