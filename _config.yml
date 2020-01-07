@@ -109,9 +109,9 @@ analytics:
 author:
   name             : "CHJ"
   avatar           : "/assets/images/chj02.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Recorder prevent volatile knowledge about AI"
+  bio              : "AI Explorer"
   location         : "Seoul, South Korea"
-  email            : "korea100th@gmail.com"
+  email            : #"korea100th@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
