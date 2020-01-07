@@ -2,6 +2,10 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Categories"
+    url: /categories/
+  - title: "ML"
+    url: /categories/ML
   #- title: "ML"
   #  url: https://koreain.github.io/about
   # - title: "About"
