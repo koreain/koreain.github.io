@@ -81,9 +81,9 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 
 응답 길이를 줄이고 반복 횟수를 줄임으로써 일부 서비스에서 음성 응답의 공식화를 향상시키는 등 LaserTagger의 장점은 대규모로 적용 할 때 더욱 두드러진다. 매우 빠른 추론 속도는 사용자 측면에서 어떠한 눈에 띄는 서비스 지연 없이, 기존에 존재하는 기술 스택에 모델을 활용될 수 있도록 한다. 또한 개선된 데이터 효율성은 다양한 언어들의 학습 데이터 수집을 가능하게 하고, 이는 서로 다른 언어적 배경의 사용자들에게 헤택으로 돌아갈 수 있다.  
 
-```
+
 해당 소스는 오픈소스로서 [여기](https://github.com/google-research/lasertagger)에서 확인할 수 있다.  
-```
+
 
 ## 5. 개인적으로.. 
 ---
