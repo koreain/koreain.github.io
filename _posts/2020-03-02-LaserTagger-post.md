@@ -3,6 +3,7 @@ title: "LaserTagger"
 excerpt: "텍스트 생성 기능의 서비스 상용화를 위한 방법론"
 toc: true
 toc_stick: true
+use_math: truef
 categories:
   - ML
 tags:
