@@ -48,7 +48,7 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 
 이러한 편집 과정은 아래 그림에서 확인할 수 있다. (문장 융합 작업에서의 LaserTagger 적용 사례)
 
-![LaserTagger_to_sentence_fusion](./content/images/Laser_Tagger_Sentence_Fusion.png)
+![LaserTagger_to_sentence_fusion](https://github.com/koreain/koreain.github.io/blob/master/assets/images/Laser_Tagger_Sentence_Fusion.png?raw=true)
 
 위 사레에서 보면, 두번째 문장의 Turing 단어를 삭제하고 "and he"라는 구문을 그 이전에 추가했다.  
 (Delte-AddX 연산이 실행된 것을 확인할 수 있다.)  
@@ -79,7 +79,7 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 4가지 작업분야를 통틀어,  LaserTagger는 대규모 학습 데이터를 사용한 strong BERT-based seq2seq baseline 모델과 유사한 성능을 보였다.  
 그리고 학습 데이터에 제한을 두었을 경우에는 명확하게 더 뛰어난 성능을 보였다. (아래 그림 참고)
 
-![LaserTagger Performance](./content/images/Laser_Tagger_Performance.png)
+![LaserTagger Performance](https://github.com/koreain/koreain.github.io/blob/master/assets/images/Laser_Tagger_Performance.png?raw=true)
 
 *100만개의 전체 데이터 셋에 대해 학습할 경우, LaserTagger와 BERT 기반의 seq2seq baseline 모델과 유사한 성능을 보이나,*  
 *1만개 이하의 데이터 셋에 대해 학습할 경우, LaserTagger가 명확하게 더 뛰어난 성능을 보였다.*
