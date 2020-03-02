@@ -1,6 +1,6 @@
 ---
 title: "LaserTagger"
-excerpt: "텍스트 생성 기능의 서비스 상용화를 위한 방법론"
+excerpt: "인코딩, 태깅, 인지 : 제어가 가능하고 효율적인 텍스트 생성을 위한 접근"
 toc: true
 toc_stick: true
 use_math: truef
@@ -10,11 +10,10 @@ tags:
   - 자연어처리
   - GooglAI
   - LaserTagger
-last_modified_at: 2020-03-02T15:53:00-00:00
+last_modified_at: 2020-03-02T18:21:00-00:00
 ---
 
 # Encode, Tag and Realize: A Controllable and Efficient Approach for Text Generation
-- 인코딩, 태깅, 인지 : 제어가 가능하고 효율적인 텍스트 생성을 위한 접근
 ---
 posted date: 2020-1-31 (금)
 posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
@@ -34,7 +33,7 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 이 결과물들은 별도로 분리된 인지(realization) 단계에서 입력 단어들에 적용된다.  
 오류가 발생할 가능성이 낮은 텍스트 생성 방법이며, 이는 학습 작업에서 쉽게 처리될 수 있으며 모델 아키텍처들을 더 빠르게 실행할 수 있다.  
 
-## 1. **LaserTagger 모델의 구조와 기능**  
+## 1. LaserTagger 모델의 구조와 기능  
 ---
 많은 텍스트 생성 작업의 뚜렷한 특징은 입력과 출력 텍스트가 자주 겹치게 된다는 것이다. (overlap)  
 예를 들면, 문법적 실수를 발견하고 고치거나 문장 융합 작업을 할 경우 대부분의 입력 텍스트는 변화시킬 필요가 없고, 단지 몇몇 단어의 수정이 필요한 경우가 많다.  
@@ -48,7 +47,7 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 
 이러한 편집 과정은 아래 그림에서 확인할 수 있다. (문장 융합 작업에서의 LaserTagger 적용 사례)
 
-![LaserTagger_to_sentence_fusion](https://github.com/koreain/koreain.github.io/blob/master/assets/images/Laser_Tagger_Sentence_Fusion.png?raw=true)
+![LaserTagger_to_sentence_fusion](https://github.com/koreain/koreain.github.io/blob/master/assets/images/Laser_Tagger_Sentence_Fusion.png?raw=true "LaserTagger to sentence fusion")
 
 위 사레에서 보면, 두번째 문장의 Turing 단어를 삭제하고 "and he"라는 구문을 그 이전에 추가했다.  
 (Delte-AddX 연산이 실행된 것을 확인할 수 있다.)  
@@ -68,18 +67,19 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 이는 이전 예측 결과를 조건부로 순차적으로 예측을 수행하는 자기회귀방식의 seq2seq 모델과 비교했을때,  
 입력 텍스트에 필요한 편집 연산이 높은 정확도를 가지면서 병렬적으로 예측될 수 있고, end-to-end 과정에 걸쳐 상당한 속도 향상을 가져올 수 있음을 의미한다.  
 
-## 2. **결과**
+## 2. 결론
 ---
-우리는 LaserTagger 모델을 4가지 작업분야에서 평가했다.  
+우리는 LaserTagger 모델을 4개의 작업에 대해서 평가했다.  
 1. sentence fusion (문장융합)
 2. split and rephrase (문장 분해 및 재구성?)
 3. astractive summarization (요약)
 4. grammer correction (문법보정)
 
-4가지 작업분야를 통틀어,  LaserTagger는 대규모 학습 데이터를 사용한 strong BERT-based seq2seq baseline 모델과 유사한 성능을 보였다.  
-그리고 학습 데이터에 제한을 두었을 경우에는 명확하게 더 뛰어난 성능을 보였다. (아래 그림 참고)
+모든 작업에 대해서,  LaserTagger는 대규모 학습 데이터를 사용한 strong BERT-based seq2seq baseline 모델과 유사한 성능을 보였다.  
 
-![LaserTagger Performance](https://github.com/koreain/koreain.github.io/blob/master/assets/images/Laser_Tagger_Performance.png?raw=true)
+나아가 학습 데이터에 제한을 두었을 경우에는 명확하게 더 뛰어난 성능을 보였다. (아래 그림 참고)
+
+![LaserTagger Performance](https://github.com/koreain/koreain.github.io/blob/master/assets/images/Laser_Tagger_Performance.png?raw=true "LaserTagger Performance")
 
 *100만개의 전체 데이터 셋에 대해 학습할 경우, LaserTagger와 BERT 기반의 seq2seq baseline 모델과 유사한 성능을 보이나,*  
 *1만개 이하의 데이터 셋에 대해 학습할 경우, LaserTagger가 명확하게 더 뛰어난 성능을 보였다.*
@@ -90,7 +90,7 @@ posted by Eric Malmi and Sebastian Krause, Software Engineers, Google Research
 
 전통적인 seq2seq 방법론과 비교했을 때, LaserTagger는 다음과 같은 이점들을 가진다.  
 
-1. 제어가능 : 우리가 직접 편집하고 관리할수 있는 ***출력 구문 어휘*** 의 조절 및 제어를 통해, 환각$^{hallucination}$이슈에 덜 취약하도록 한다.    
+1. 제어가능 : 우리가 직접 편집하고 관리할수 있는 **출력 구문 어휘** 의 조절 및 제어를 통해, 환각$^{hallucination}$이슈에 덜 취약하도록 한다.    
 2. 추론속도 : seq2seq baseline 모델보다 최대 100배 더 빠른 예측 연산을 수행하고, 이는 모델을 실시간 서비스에 적용 가능하도록 해준다.  
 3. 데이터효율성 : 수 백개 또는 수 천개의 데이터만으로 학습한 경우에도 합리적인 수준의 결과를 도출한다.
                  기존 seq2seq base라인 모델이 유사한 수준의 결과를 도출하기 위해서는 수 백 / 수 천이 아닌 수 만개의 데이터를 학습해야 했다.  
