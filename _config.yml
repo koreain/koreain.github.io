@@ -111,11 +111,11 @@ author:
   avatar           : "/assets/images/chj02.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "AI Explorer"
   location         : "Seoul, South Korea"
-  email            : "korea100th@gmail.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: <a href= "mailto:korea100th@gmail.com" >
+      url: mailto:korea100th@gmail.com
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   # url: "https://your-website.com"
