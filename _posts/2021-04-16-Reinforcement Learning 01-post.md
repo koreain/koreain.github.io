@@ -19,7 +19,7 @@ tags:
 
 행동심리학에는 시행착오 학습이라는 개념이 있습니다. 시행착오 학습은 동물들이 이것저것 시도해보면서 그 결과를 통해 학습하는 것을 말합니다. 스키너는 쥐 실험을 통해 동물이 행동과 그 결과 사이의 관계를 학습하는 것을 확인했습니다. 스키너는 상자 안에 굶긴 쥐를 집어넣고 아래 그림과 같이 실험을 수행했습니다.  
 
-![skinner's mouse experiment](https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/skinner_mouse.jpg?raw=true "skinner's mouse experiment")
+<center><img src="https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/skinner_mouse.jpg" width="100%" height="100%" alt="Skinner's Mouse Experiment"></center>
 
 스키너 쥐 실험의 프로세스는 아래와 같습니다.
 1. 굶긴 쥐를 상자에 넣는다.
