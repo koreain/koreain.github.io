@@ -67,7 +67,7 @@ tags:
 ## 4. 강화학습 문제
 강화학습은 결정을 순차적으로 내려야 하는 문제에 적용됩니다. 아래 그림은 순차적 결정문제를 그림으로 나타낸 것으로 현재 위치에서 행동을 한번 선택하는 것이 아니라 계속적으로 선택해야 합니다. 
 
-![Sequential Decision](https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/Seq_Action_Decision.png?raw=true "Sequential Decision")
+![Seq_Action_Decision](https://user-images.githubusercontent.com/16330017/115953638-abd36e80-a527-11eb-8f7a-dac44a4dcbf6.png)
 
 하지만 이렇게 순차적으로 결정을 내리는 문제의 해결책이 강화학습만 있는 것은 아닙니다. 향후에 다루게 될 다이내믹 프로그래밍(Dynamic Programming), 진화 알고리즘(Evolutionary Algorithm) 또한 이러한 문제를 푸는 데 적용할 수 있습니다. 하지만 두 방법론 모두 각기 한계를 가지고 있으며 강화학습이 그 한계를 극복할 수 있습니다.
 
