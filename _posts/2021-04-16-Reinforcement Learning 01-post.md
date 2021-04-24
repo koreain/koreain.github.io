@@ -50,7 +50,7 @@ tags:
 ## 3. 스스로 학습하는 컴퓨터, 에이전트
 앞으로 강화학습을 통해 스스로 학습하는 컴퓨터를 에이전트(Agent)라고 할 것입니다. 에이전트는 환경에 대해 사전지식이 없는 상태에서 학습을 합니다. 에이전트는 자신이 놓은 환경에서 자신의 상태를 인식/관찰한 후 행동합니다. 그러면 환경은 에이전트에게 보상을 주고 다음 상태를 알려줍니다. 이 보상을 통해 에이전트는 어떤 행동이 좋은 행동인지 간접적으로 알게 됩니다. 이러한 보상을 지속해서 얻는다면 에이전트는 좋은 행동을 학습할 수 있습니다. 아래 그림은 이 과정을 그림으로 나타낸 것입니다.
 
-![MDP](https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/MDP.png?raw=true "Markov Decision Process")
+<center><img src="https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/MDP.png?raw=true" width="100%" height="100%" alt="Markov Decision Process"></center>
 
 에이전트는 자신의 행동과 행동의 결과를 보상을 통해 학습하면서 어떤 행동을 해야 좋은 결과를 얻게 되는지 알게 됩니다. 따라서 에이전트는 점점 보상을 받는 행동을 자주 하게 되고 환경으로부터 더 많은 보상을 얻게 됩니다. 강화학습의 목적은 에이전트가 환경을 탐색하면서 얻는 보상들의 합을 최대화하는 "최적의 행동양식, 또는 정책"을 학습하는 것입니다.
 
@@ -67,7 +67,7 @@ tags:
 ## 4. 강화학습 문제
 강화학습은 결정을 순차적으로 내려야 하는 문제에 적용됩니다. 아래 그림은 순차적 결정문제를 그림으로 나타낸 것으로 현재 위치에서 행동을 한번 선택하는 것이 아니라 계속적으로 선택해야 합니다. 
 
-![Seq_Action_Decision](https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/Seq_Action_Decision.png?raw=true "Sequential Action Decision")
+<center><img src="https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/Seq_Action_Decision.png?raw=true" width="100%" height="100%" alt="Sequential Action Decision"></center>
 
 하지만 이렇게 순차적으로 결정을 내리는 문제의 해결책이 강화학습만 있는 것은 아닙니다. 향후에 다루게 될 다이내믹 프로그래밍(Dynamic Programming), 진화 알고리즘(Evolutionary Algorithm) 또한 이러한 문제를 푸는 데 적용할 수 있습니다. 하지만 두 방법론 모두 각기 한계를 가지고 있으며 강화학습이 그 한계를 극복할 수 있습니다.
 
