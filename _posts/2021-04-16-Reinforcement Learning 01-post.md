@@ -19,7 +19,7 @@ tags:
 
 행동심리학에는 시행착오 학습이라는 개념이 있습니다. 시행착오 학습은 동물들이 이것저것 시도해보면서 그 결과를 통해 학습하는 것을 말합니다. 스키너는 쥐 실험을 통해 동물이 행동과 그 결과 사이의 관계를 학습하는 것을 확인했습니다. 스키너는 상자 안에 굶긴 쥐를 집어넣고 아래 그림과 같이 실험을 수행했습니다.  
 
-<center><img src="https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/skinner_mouse.jpg?raw=true" width="100%" height="100%" alt="Skinner's Mouse Experiment"></center>
+<center><img src="https://github.com/koreain/koreain.github.io/blob/master/_posts/content/images/skinner_mouse.jpg?raw=true" width="70%" height="70%" alt="Skinner's Mouse Experiment"></center>
 
 스키너 쥐 실험의 프로세스는 아래와 같습니다.
 1. 굶긴 쥐를 상자에 넣는다.
@@ -108,3 +108,5 @@ tags:
 딥마인드에서는 이 게임을 학습하는 동영상을 유튜브에 공개했습니다. 이 동영상을 보면 에이전트는 단순히 벽돌만 깨는 것을 학습한 것이 아니고 한 쪽을 터널로 뚫어서 여러 개의 벽돌을 한꺼번에 깨버리는 것도 학습했습니다. 아래 영상을 통해 에이전트가 어떻게 브레이크아웃을 학습시키는지 간략하게 확인해 보실 수 있습니다. 영상 1:25 부분에서 보면 한쪽 구멍을 뚫어서 위쪽 벽돌을 한꺼번에 깨버리는 전략을 학습하기도 합니다.
 
 [![Google DeepMinds's Deep Q-learning](https://img.youtube.com/vi/V1eYniJ0Rnk/0.jpg)](https://www.youtube.com/watch?v=V1eYniJ0Rnk?t=0s)
+
+<center><a href="https://www.youtube.com/watch?v=V1eYniJ0Rnk?t=0s"><img src="https://img.youtube.com/vi/V1eYniJ0Rnk/0.jpg" alt="Google DeepMinds's Deep Q-learning"></a></center>
